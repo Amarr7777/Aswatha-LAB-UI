@@ -5,11 +5,11 @@ export default function NavBar({ setActiveTab }) {
     <div className="flex items-center justify-between my-5 bg-primary h-12 rounded-full">
       <p
         onClick={() => {
-          setActiveTab(0);
+          setActiveTab(1);
         }}
         className="text-third px-5 font-bold cursor-pointer"
       >
-        Aswathy Lab
+        ASWATHI CLINICAL LAB
       </p>
       <div className="flex items-center px-2">
         <p

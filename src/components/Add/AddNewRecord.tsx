@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { appActions } from '../../store/app';
 import { ADD_NEW_RECORD_REQUESTING, ADD_NEW_RECORD_SAGA_REQUESTING, GET_PARAMETER_REQUESTING, GET_PARAMETER_SAGA_REQUESTING, GET_TEST_REQUESTING, GET_TEST_SAGA_REQUESTING, GET_UNIT_REQUESTING, GET_UNIT_SAGA_REQUESTING } from '../../constants/actionTypes';
 import { getParameters, getTests, getUnits } from '../../store/appSelector';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 
 export default function AddNewRecord({ setActiveTab }) {
