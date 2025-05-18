@@ -24,8 +24,8 @@ export default function AddNewRecord({ setActiveTab }) {
     ]);
 
     useEffect(() => {
-        dispatch(appActions[GET_TEST_REQUESTING]());
-        dispatch({ type: GET_TEST_SAGA_REQUESTING });
+        // dispatch(appActions[GET_TEST_REQUESTING]());
+        // dispatch({ type: GET_TEST_SAGA_REQUESTING });
         dispatch(appActions[GET_PARAMETER_REQUESTING]());
         dispatch({ type: GET_PARAMETER_SAGA_REQUESTING });
         dispatch(appActions[GET_UNIT_REQUESTING]());
@@ -48,7 +48,7 @@ export default function AddNewRecord({ setActiveTab }) {
             lastName,
             age,
             sex,
-            test,
+            // test,
             // date,
             parameters: parameterRows
         };
@@ -69,7 +69,6 @@ export default function AddNewRecord({ setActiveTab }) {
         !lastName.trim() ||
         !age ||
         !sex ||
-        !test ||
         parameterRows.some(row =>
             !row.parameter.trim() || !row.value || !row.unit.trim() || !row.reference.trim()
         );
@@ -129,7 +128,7 @@ export default function AddNewRecord({ setActiveTab }) {
                 </div>
 
                 {/* row 2 */}
-                <div className='flex items-center justify-between w-full gap-2'>
+                {/* <div className='flex items-center justify-between w-full gap-2'>
                     <select
                         className='p-2 bg-secondary outline-0 rounded-xl flex-1'
                         value={test}
@@ -139,7 +138,7 @@ export default function AddNewRecord({ setActiveTab }) {
                         {tests.map((test) => (
                             <option key={test._id} value={test.name}>{test.name}</option>
                         ))}
-                    </select>
+                    </select> */}
                     {/* date picker */}
                     {/* <div className='p-2 bg-secondary outline-0 rounded-xl'>
                         <DatePicker
@@ -152,7 +151,7 @@ export default function AddNewRecord({ setActiveTab }) {
                             placeholderText="Select Date"
                         />
                     </div> */}
-                </div>
+                {/* </div> */}
 
                 {/* row 3 - dynamic parameter rows */}
                 {parameterRows.map((row, index) => (

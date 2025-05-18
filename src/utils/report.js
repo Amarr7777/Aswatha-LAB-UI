@@ -146,7 +146,7 @@ export const generateLabReport = (record) => {
     const labEmail = "aswathylab234@gmail.com";
 
     // --- Header ---
-    doc.setFillColor("#005566");
+    doc.setFillColor("#2555A3");
     doc.rect(0, 0, 210, 40, "F");
 
     doc.setFontSize(18);
@@ -191,10 +191,10 @@ export const generateLabReport = (record) => {
     // doc.text(`Ref: ${record.refBy || "N/A"}`, 110, 60);
 
     // --- Main Test Section ---
-    doc.setFontSize(14);
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor("#005566");
-    doc.text(record.test.toUpperCase(), 14, 95);
+    // doc.setFontSize(14);
+    // doc.setFont("helvetica", "bold");
+    // doc.setTextColor("#005566");
+    // doc.text(record.test.toUpperCase(), 14, 95);
 
     // const mainResult = record.parameters[0]?.value || "N/A";
     const mainFlag = record.parameters[0]?.flag || "";
@@ -219,7 +219,7 @@ export const generateLabReport = (record) => {
         ]),
         theme: "grid",
         headStyles: {
-            fillColor: "#005566",
+            fillColor: "#2555A3",
             textColor: [255, 255, 255],
             fontSize: 11,
         },

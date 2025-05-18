@@ -6,7 +6,7 @@ import AddNewTest from './AddNewTest'
 export default function AddIndex() {
   return (
     <div className="flex flex-col gap-2 w-full">
-        <AddNewTest/>
+        {/* <AddNewTest/> */}
         {/* parameter */}
         <AddNewParameter />
         {/* Unit */}
